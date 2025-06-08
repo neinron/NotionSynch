@@ -26,7 +26,7 @@ load_dotenv()
 # Get environment variables
 NOTION_API_KEY = os.getenv("NOTION_API_KEY")
 DATABASE_ID = os.getenv("DATABASE_ID")
-PORT = int(os.getenv("PORT", "5004"))  # Changed from 5000 to 5001 to match ngrok
+PORT = int(os.getenv("PORT", "5004"))  # Changed from 5000 to 5004 to match ngrok
 
 if not NOTION_API_KEY or not DATABASE_ID:
     raise ValueError("Please set NOTION_API_KEY and DATABASE_ID environment variables")
