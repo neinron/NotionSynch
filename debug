@@ -1,0 +1,62 @@
+t=2025-05-18T22:05:55+0200 lvl=info msg="open config file" path="/Users/jaronschurer/Library/CloudStorage/OneDrive-Persönlich/Coding/Notion Calender Sync/ngrok.yml" err=nil
+t=2025-05-18T22:05:55+0200 lvl=info msg="open config file" path="/Users/jaronschurer/Library/CloudStorage/OneDrive-Persönlich/Coding/Notion Calender Sync/tunnels.yml" err=nil
+t=2025-05-18T22:05:55+0200 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040 allow_hosts=[]
+t=2025-05-18T22:05:56+0200 lvl=info msg="client session established" obj=tunnels.session
+t=2025-05-18T22:05:56+0200 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2025-05-18T22:05:56+0200 lvl=info msg="started tunnel" obj=tunnels name=calendar addr=http://localhost:5000 url=https://32b3-2a02-810d-ea2-4400-90e8-5317-eaac-c417.ngrok-free.app
+t=2025-05-18T22:06:22+0200 lvl=info msg=start pg=/ id=dcacda594ed7494e
+t=2025-05-18T22:06:22+0200 lvl=info msg=end pg=/ id=dcacda594ed7494e status=302 dur=318.416µs
+t=2025-05-18T22:06:22+0200 lvl=info msg=start pg=/inspect/http id=b2da46968e6f92b8
+t=2025-05-18T22:06:22+0200 lvl=info msg=end pg=/inspect/http id=b2da46968e6f92b8 status=200 dur=2.268666ms
+t=2025-05-18T22:06:22+0200 lvl=info msg=start pg=/static/css/app.398abcb27117c32bb620.css id=7052368b5c928792
+t=2025-05-18T22:06:22+0200 lvl=info msg=start pg=/static/js/vendor.00651d8b886a1e6d6e1b.js id=e32338777d8b5ef2
+t=2025-05-18T22:06:22+0200 lvl=info msg=start pg=/static/js/rpx.f7950203a09a23d786c9.js id=7addf18ffcddde9d
+t=2025-05-18T22:06:22+0200 lvl=info msg=start pg=/static/js/app.451cc64c2e8150528c9d.js id=5c387209c6fce63a
+t=2025-05-18T22:06:22+0200 lvl=info msg=end pg=/static/css/app.398abcb27117c32bb620.css id=7052368b5c928792 status=200 dur=15.637ms
+t=2025-05-18T22:06:22+0200 lvl=info msg=end pg=/static/js/rpx.f7950203a09a23d786c9.js id=7addf18ffcddde9d status=200 dur=13.198375ms
+t=2025-05-18T22:06:22+0200 lvl=info msg=end pg=/static/js/app.451cc64c2e8150528c9d.js id=5c387209c6fce63a status=200 dur=13.055292ms
+t=2025-05-18T22:06:22+0200 lvl=info msg=end pg=/static/js/vendor.00651d8b886a1e6d6e1b.js id=e32338777d8b5ef2 status=200 dur=15.318625ms
+t=2025-05-18T22:06:22+0200 lvl=info msg=start pg=/grpc/agent.Web/Preloaded id=a29df7b13208570a
+t=2025-05-18T22:06:22+0200 lvl=info msg=start pg=/grpc/agent.Web/State id=c875acbdaea06e99
+t=2025-05-18T22:06:22+0200 lvl=info msg=end pg=/grpc/agent.Web/Preloaded id=a29df7b13208570a status=200 dur=17.348875ms
+t=2025-05-18T22:06:22+0200 lvl=info msg=start pg=/static/favicon.ico id=8b9a96235cae0bd5
+t=2025-05-18T22:06:22+0200 lvl=info msg=end pg=/static/favicon.ico id=8b9a96235cae0bd5 status=200 dur=672.375µs
+t=2025-05-18T22:06:56+0200 lvl=info msg=start pg=/inspect/http id=a1dff850acee5b46
+t=2025-05-18T22:06:56+0200 lvl=info msg=end pg=/inspect/http id=a1dff850acee5b46 status=200 dur=689.167µs
+t=2025-05-18T22:06:56+0200 lvl=info msg=start pg=/static/css/app.398abcb27117c32bb620.css id=d69f2485615cd231
+t=2025-05-18T22:06:56+0200 lvl=info msg=end pg=/static/css/app.398abcb27117c32bb620.css id=d69f2485615cd231 status=304 dur=404.875µs
+t=2025-05-18T22:06:56+0200 lvl=info msg=start pg=/static/js/rpx.f7950203a09a23d786c9.js id=23c1d8c0e1dfe9f7
+t=2025-05-18T22:06:56+0200 lvl=info msg=end pg=/static/js/rpx.f7950203a09a23d786c9.js id=23c1d8c0e1dfe9f7 status=304 dur=288.916µs
+t=2025-05-18T22:06:56+0200 lvl=info msg=start pg=/static/js/app.451cc64c2e8150528c9d.js id=25873459f4ee2edc
+t=2025-05-18T22:06:56+0200 lvl=info msg=start pg=/static/js/vendor.00651d8b886a1e6d6e1b.js id=1ecdc1feb7970b7e
+t=2025-05-18T22:06:56+0200 lvl=info msg=end pg=/static/js/app.451cc64c2e8150528c9d.js id=25873459f4ee2edc status=304 dur=207.083µs
+t=2025-05-18T22:06:56+0200 lvl=info msg=end pg=/static/js/vendor.00651d8b886a1e6d6e1b.js id=1ecdc1feb7970b7e status=304 dur=759.333µs
+t=2025-05-18T22:06:56+0200 lvl=info msg=start pg=/grpc/agent.Web/Preloaded id=64950fbae133f873
+t=2025-05-18T22:06:56+0200 lvl=info msg=start pg=/grpc/agent.Web/State id=a83191ea684272dc
+t=2025-05-18T22:06:56+0200 lvl=info msg=end pg=/grpc/agent.Web/Preloaded id=64950fbae133f873 status=200 dur=3.079209ms
+t=2025-05-18T22:06:57+0200 lvl=info msg=end pg=/grpc/agent.Web/State id=c875acbdaea06e99 status=200 dur=34.775788s
+t=2025-05-18T22:07:29+0200 lvl=info msg="join connections" obj=join id=5903631aac6d l=[::1]:5000 r=44.237.227.106:42235
+t=2025-05-18T22:07:29+0200 lvl=info msg=start pg=/static/assets/glyphicons-halflings-regular.woff2 id=b95ff6de8d9116c2
+t=2025-05-18T22:07:29+0200 lvl=info msg=end pg=/static/assets/glyphicons-halflings-regular.woff2 id=b95ff6de8d9116c2 status=404 dur=201.291µs
+t=2025-05-18T22:07:29+0200 lvl=info msg=start pg=/static/assets/glyphicons-halflings-regular.woff id=88a1e5579ad088e3
+t=2025-05-18T22:07:29+0200 lvl=info msg=end pg=/static/assets/glyphicons-halflings-regular.woff id=88a1e5579ad088e3 status=404 dur=137.25µs
+t=2025-05-18T22:07:29+0200 lvl=info msg=start pg=/static/assets/glyphicons-halflings-regular.ttf id=c00ca95a2ad89c11
+t=2025-05-18T22:07:29+0200 lvl=info msg=end pg=/static/assets/glyphicons-halflings-regular.ttf id=c00ca95a2ad89c11 status=404 dur=157.167µs
+t=2025-05-18T22:07:29+0200 lvl=info msg=start pg=/static/assets/060b2710bdbbe3dfe48b.svg id=54f5bb47a7fb1043
+t=2025-05-18T22:07:29+0200 lvl=info msg=end pg=/static/assets/060b2710bdbbe3dfe48b.svg id=54f5bb47a7fb1043 status=404 dur=211.666µs
+t=2025-05-18T22:08:08+0200 lvl=info msg="join connections" obj=join id=7e065e263dab l=[::1]:5000 r=44.227.140.35:48442
+t=2025-05-18T22:17:21+0200 lvl=info msg="open config file" path="/Users/jaronschurer/Library/CloudStorage/OneDrive-Persönlich/Coding/Notion Calender Sync/ngrok.yml" err=nil
+t=2025-05-18T22:17:21+0200 lvl=info msg="open config file" path="/Users/jaronschurer/Library/CloudStorage/OneDrive-Persönlich/Coding/Notion Calender Sync/tunnels.yml" err=nil
+t=2025-05-18T22:17:21+0200 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040 allow_hosts=[]
+t=2025-05-18T22:17:21+0200 lvl=info msg="client session established" obj=tunnels.session
+t=2025-05-18T22:17:21+0200 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2025-05-18T22:17:22+0200 lvl=info msg="started tunnel" obj=tunnels name=calendar addr=http://localhost:5001 url=https://3e10-2a02-810d-ea2-4400-90e8-5317-eaac-c417.ngrok-free.app
+t=2025-05-18T22:17:23+0200 lvl=info msg=start pg=/grpc/agent.Web/State id=859dbdc1011e5890
+t=2025-05-18T22:18:26+0200 lvl=info msg="Got quit command" obj=consoleui
+t=2025-05-18T22:18:26+0200 lvl=info msg="received stop request" obj=app stopReq="{err:<nil> restart:false}"
+t=2025-05-18T22:18:26+0200 lvl=info msg="session closing" obj=tunnels.session err=nil
+t=2025-05-18T22:18:26+0200 lvl=info msg="accept failed" obj=tunnels.session obj=csess id=543b4b5c66cf err="reconnecting session closed"
+t=2025-05-18T22:18:49+0200 lvl=info msg="open config file" path="/Users/jaronschurer/Library/CloudStorage/OneDrive-Persönlich/Coding/Notion Calender Sync/ngrok.yml" err=nil
+t=2025-05-18T22:18:49+0200 lvl=info msg="open config file" path="/Users/jaronschurer/Library/CloudStorage/OneDrive-Persönlich/Coding/Notion Calender Sync/tunnels.yml" err=nil
+t=2025-05-18T22:19:52+0200 lvl=info msg="open config file" path="/Users/jaronschurer/Library/CloudStorage/OneDrive-Persönlich/Coding/Notion Calender Sync/ngrok.yml" err=nil
+t=2025-05-18T22:20:13+0200 lvl=info msg="open config file" path="/Users/jaronschurer/Library/CloudStorage/OneDrive-Persönlich/Coding/Notion Calender Sync/ngrok.yml" err=nil

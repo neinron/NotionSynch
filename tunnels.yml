@@ -1,0 +1,5 @@
+version: 2
+tunnels:
+  calendar:
+    addr: 5004
+    proto: http
