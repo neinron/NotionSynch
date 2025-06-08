@@ -71,3 +71,42 @@ This project provides a small Flask service that converts Notion calendar data t
 
 The `ngrok.yml` file contains Ngrok configuration and should not be committed with your secret token. The file is included in `.gitignore`. When running Ngrok you can supply your token via the `NGROK_AUTH_TOKEN` environment variable.
 
+
+## Using Git on PythonAnywhere
+
+PythonAnywhere consoles include common source control tools like Git, so you can manage repositories directly from the web interface. If you want to clone a private GitHub repo, generate a key on PythonAnywhere and add the public part to your GitHub account:
+
+```bash
+ssh-keygen
+cat ~/.ssh/id_rsa.pub
+```
+
+Free accounts may only access a limited set of sites over HTTP/HTTPS or the pure `git` protocol. For repositories hosted on services such as GitHub or Bitbucket, make sure you use HTTPS URLs. GitHub requires a personal access token when pushing over HTTPS.
+
+For more details, see the PythonAnywhere help page on using external version control.
+
+## Automating Updates on PythonAnywhere
+
+To automatically pull new code and reload your web app whenever you push to GitHub,
+use the `update_webhook.py` script included in this repository.
+
+1. **Add the webhook route**
+   Configure your PythonAnywhere WSGI file to use the webhook app:
+
+   ```python
+   from update_webhook import app as application
+   ```
+
+2. **Set environment variables**
+   - `GITHUB_WEBHOOK_SECRET`: secret token configured in your GitHub webhook.
+   - `WSGI_FILE`: path to your PythonAnywhere WSGI file (defaults to
+     `/var/www/yourusername_pythonanywhere_com_wsgi.py`).
+
+3. **Create a GitHub webhook**
+   - Payload URL: `https://<your-username>.pythonanywhere.com/update`
+   - Content type: `application/json`
+   - Secret: same value as `GITHUB_WEBHOOK_SECRET`
+   - Trigger: “Just the push event.”
+
+Whenever GitHub sends the webhook, PythonAnywhere will `git pull` the repository
+and touch the WSGI file, causing the app to reload with the latest code.
