@@ -9,24 +9,28 @@ from dotenv import load_dotenv
 import json
 from flask_cors import CORS
 
+# Load environment variables from .env file before configuring logging
+load_dotenv()
+
+# Determine log file path
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+LOG_PATH = os.getenv("LOG_PATH", os.path.join(BASE_DIR, "app.log"))
+
 # Configure logging to show both in console and file
 logging.basicConfig(
     level=logging.DEBUG,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
         logging.StreamHandler(sys.stdout),
-        logging.FileHandler('/home/neinron/src/app.log')
+        logging.FileHandler(LOG_PATH)
     ]
 )
 logger = logging.getLogger(__name__)
 
-# Load environment variables from .env file
-load_dotenv()
-
 # Get environment variables
 NOTION_API_KEY = os.getenv("NOTION_API_KEY")
 DATABASE_ID = os.getenv("DATABASE_ID")
-PORT = int(os.getenv("PORT", "5004"))  # Changed from 5000 to 5001 to match ngrok
+PORT = int(os.getenv("PORT", "5004"))  # Changed from 5000 to 5004 to match ngrok
 
 if not NOTION_API_KEY or not DATABASE_ID:
     raise ValueError("Please set NOTION_API_KEY and DATABASE_ID environment variables")

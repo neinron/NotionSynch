@@ -35,6 +35,7 @@ env/
 
 # Logs
 *.log
+debug
 
 # Local development
 *.db
@@ -67,6 +68,7 @@ htmlcov/
 
 # Ngrok
 auth_token
+ngrok.yml
 
 # Notion sync
 *.ics
