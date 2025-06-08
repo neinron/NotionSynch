@@ -1,2 +1,2 @@
-echo "version: 2
-authtoken: 2xHa2nUw9t5uqfwEcXz6WIeTjOb_5Au6iGLv1TM3PaTvjnGqK" > ngrok.yml
+version: 2
+authtoken: ${NGROK_AUTH_TOKEN}
