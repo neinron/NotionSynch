@@ -35,6 +35,7 @@ env/
 
 # Logs
 *.log
+debug
 
 # Local development
 *.db
