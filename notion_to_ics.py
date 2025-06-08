@@ -9,19 +9,23 @@ from dotenv import load_dotenv
 import json
 from flask_cors import CORS
 
+# Load environment variables from .env file before configuring logging
+load_dotenv()
+
+# Determine log file path
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+LOG_PATH = os.getenv("LOG_PATH", os.path.join(BASE_DIR, "app.log"))
+
 # Configure logging to show both in console and file
 logging.basicConfig(
     level=logging.DEBUG,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
         logging.StreamHandler(sys.stdout),
-        logging.FileHandler('/home/neinron/src/app.log')
+        logging.FileHandler(LOG_PATH)
     ]
 )
 logger = logging.getLogger(__name__)
-
-# Load environment variables from .env file
-load_dotenv()
 
 # Get environment variables
 NOTION_API_KEY = os.getenv("NOTION_API_KEY")
