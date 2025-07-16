@@ -5,7 +5,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 # Import the Flask app from the source file
-from update_webhook import app
+from notion_to_ics import app
 
 if __name__ == "__main__":
     try:
